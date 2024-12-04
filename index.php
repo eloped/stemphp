@@ -2,82 +2,62 @@
 <html lang="es-mx">
 <head>
     <meta charset="UTF-8">
-    <title>STEM Grupo XB</title>
-    <link rel="stylesheet" href="css/estilos.css"/>
-    <link rel="stylesheet" href="css/menu.css"/>
-    <link rel="stylesheet" href="css/problemas.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Rambla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntroPHP8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<section class="wrapper">
+<section class="contenedor">
     <header>
-      <h1 class="logo"><a href="index.html">STEMphp</a></h1>
-      <nav>
-      <ul>
-        <li><a href="index.php" class="current">Inicio</a></li>
-      </ul>
-      </nav>
+        <h1>Introducción a PHP8</h1>
     </header>
-    <section id="contenedor">
-    <section  class="problema">
-        <h2>Problema: Cálcular la densidad de la Tierra</h2>
-        <p>Descripción:</p>
-        <p>El radio de la Tierra es 6 378 km y su masa es 5.97E24 kg. <br>
-        a) ¿Cuál es la densidad promedio de la Tierra?<br>
-        b) Si el radio de la Tierra se redujera a una tercera parte y su masa no cambiará, cuál serı́a su densidad?<br>
-        c) Si el radio de la Tierra y su masa se redujera a una
-        tercera parte, ¿su densidad serı́a la misma? ¿por qué?</p>
-    </section>
-    <section class="formulas">
-        <h2>Fórmulas</h2>
-        Densidad = Masa/Volumen<br>
-        Volumen=(4/3)pi*r*r*r
-    </section>
-    <section class="datos">
-        <h2>Datos:</h2>
-        m= 5.97E24 Kg. <br>
-        r= 6378 Km.
-    </section>
-    <section class="calculos">
-    <h2>Solución</h2>
-        <p>a)La densidad de la Tierra es:<br>volumen= (4/3)*pi*(6378000)*(6378000)*(6378000)<br>
-        densidad = 5.97E24 Kg/volumen (m3)
-        </p>
-        <p>b) r2=(1/3)*r = 6378000/3 =2126000 => vb= (4/3)*pi*(2126000)*(2126000)*(2126000)<br>
-        densidad = 5.97E24 Kg/vb (m3)
-        </p>
-        <p>b) m2=(1/3)*m = 5.97E24/3 = 1.99e24<br>
-        densidad = 1.99E24 Kg/vb (m3)
-        </p>
-    </section>
-<?php
-     function calcula_densidad(){
-        $PI=3.141592;
-        $masa= 5.97E24;
-        $radio= 6378e3;
-        $rb=$radio/3;
-        $mc=$masa/3;
-        $volumen= (4/3)*$PI*$radio*$radio*$radio;
-        $densidad= $masa/$volumen;
-        $vb=(4/3)*$PI*$rb*$rb*$rb;
-        $densidadb=$masa/$vb;
-        $densidadc=$mc/$vb;
-        $resultado="<br>a) d= ".$densidad." <br>b) d(1/3)r= ".$densidadb." <br>c) d(1/3)myr= ".$densidadc;
-        return $resultado;
-     }
-?>
-    <section class="resultado">
-        <h2>Resultado:</h2>
-        <div id="resultadoA"></div>
+    <section class="portada">
+        <section class="codigo">
+            <h1>codigo:</h1>
+            <textarea cols="80" rows="20" readonly>"
+
+    </textarea>
+        </section>
+        <h1>Ejecución:</h1>
         <?php
-        print "<h1> resultado: <br>".calcula_densidad(). " kg/(metro cubico)</h1>";
+
+
         ?>
     </section>
-    </section>
-<footer class="pie">
-     Creative Commons versión 4.0 SciSoft 2024
-</footer>
+    <aside>
+        <ul>
+            <li><a href="ejemplo1.php">Numeros</a></li>
+            <li><a href="ejemplo2.php">Ejemplo2</a></li>
+            <li><a href="ejemplo3.php">Ejemplo3</a></li>
+            <li><a href="ejemplo4.php">Ejemplo4</a></li>
+            <li><a href="ejemplo5.php">Ejemplo5</a></li>
+            <li><a href="ejemplo6.php">Ejemplo6</a></li>
+            <li><a href="ejemplo7.php">Ejemplo7</a></li>
+            <li><a href="ejemplo8.php">Ejemplo8</a></li>
+            <li><a href="ejemplo9.php">Ejemplo9</a></li>
+            <li><a href="ejemplo10.php">Ejemplo10</a></li>
+            <li><a href="ejemplo11.php">Ejemplo11</a></li>
+            <li><a href="ejemplo12.php">Ejemplo12</a></li>
+            <li><a href="ejemplo13.php">Ejemplo13</a></li>
+            <li><a href="ejemplo14.php">Ejemplo14</a></li>
+            <li><a href="ejemplo15.php">Ejemplo15</a></li>
+            <li><a href="ejemplo16.php">Ejemplo16</a></li>
+            <li><a href="ejemplo17.php">Ejemplo17</a></li>
+            <li><a href="ejemplo18.php">Ejemplo18</a></li>
+            <li><a href="cadenas1.php">Cadenas1</a></li>
+            <li><a href="cadenas2.php">Cadenas2</a></li>
+            <li><a href="cadenas3.php">Cadenas3</a></li>
+            <li><a href="cadenas4.php">Cadenas4</a></li>
+        </ul>
+    </aside>
+    <footer>
+        Creative Commons 4.0 22024
+        b</footer>
 </section>
 </body>
 </html>
